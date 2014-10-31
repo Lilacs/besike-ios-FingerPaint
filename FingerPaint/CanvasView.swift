@@ -37,9 +37,10 @@ class CanvasView: UIView {
                     CGContextAddLineToPoint(context, path.points[i].x, path.points[i].y)
                 }
             }
+            CGContextStrokePath(context)
         }
         
-        CGContextStrokePath(context)
+        
         
     }
     
